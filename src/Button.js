@@ -18,13 +18,13 @@ Button.propTypes = {
     const count =
       Number(!!primary) +
       Number(!!secondary) +
-      Number(!!success) +
       Number(!!warning) +
+      Number(!!success) +
       Number(!!danger);
 
     if (count > 1) {
       return new Error(
-        "only one of primary, secondary, success, warning, danger, can be selected!"
+        "Only one of primary, secondary, success, warning, danger can be true"
       );
     }
   },

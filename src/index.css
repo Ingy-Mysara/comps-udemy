@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* for react-icons */
+button > svg {
+    margin-right: 5px;
+}

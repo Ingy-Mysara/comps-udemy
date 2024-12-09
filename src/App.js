@@ -1,10 +1,13 @@
 import Button from "./Button";
 
 function App() {
+  const handleClick = () => {
+    console.log("button clicked");
+  };
   return (
     <div>
       <div>
-        <Button success rounded outline>
+        <Button success rounded outline onClick={handleClick}>
           Click me!
         </Button>
       </div>
